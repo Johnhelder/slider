@@ -8,4 +8,15 @@ header{
   display: flex;
   flex-direction: column;
   height: 100vh;
+  background: #cccccc;
+}
+
+.header{
+  height: 50px;
+  background-color: #FF0000;
+}
+
+.slider{
+  flex: 1;
+  background-color: #00FF00;
 }
