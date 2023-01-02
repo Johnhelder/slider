@@ -10,11 +10,18 @@ function goPrev(){
   if(currentSlide < 0){
     currentSlide = totalSlides -1
   }
+  updateMargin();
 }
 
 function goNext(){
   currentSlide++;
-  if(currentSlide > (totalSlides-1){
+  if(currentSlide > (totalSlides-1)){
     currentSlide = 0;
   }
+  updateMargin();
+}
+
+function updateMargin(){
+  let newMargin = (currentSlide * document.body.clientWidth);
+  document.querySelector('.slider--width').style.marginLeft = `-${newMargin}px`;
 }
