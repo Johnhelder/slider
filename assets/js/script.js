@@ -11,3 +11,10 @@ function goPrev(){
     currentSlide = totalSlides -1
   }
 }
+
+function goNext(){
+  currentSlide++;
+  if(currentSlide > (totalSlides-1){
+    currentSlide = 0;
+  }
+}
